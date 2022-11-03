@@ -1,0 +1,10 @@
+Given an integer number n, return the difference between the product of its digits and the sum of its digits.
+
+
+class Solution:
+    def hammingWeight(self, n: int) -> int:
+        ham = 0
+        while n:
+            ham += (n & 1)
+            n >>= 1
+        return ham
